@@ -20,6 +20,7 @@ function transformStateWithClones(state, actions) {
       default:
         throw new Error(`Unsupported action type: ${action.type}`);
     }
+
     history.push({ ...stateCopy });
   }
 
